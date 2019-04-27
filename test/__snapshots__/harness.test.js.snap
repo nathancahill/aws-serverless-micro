@@ -1,0 +1,447 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`aws-serverless-micro/base64.js 1`] = `
+Object {
+  "body": "{\\"a\\":1}",
+  "headers": Object {
+    "content-type": "application/json; charset=utf-8",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`aws-serverless-micro/request-object.js 1`] = `
+Object {
+  "body": "{\\"headers\\":{\\"content-type\\":\\"application/json\\"},\\"path\\":\\"/object?multi=a&multi=b&some=cool\\",\\"method\\":\\"POST\\",\\"httpVersion\\":\\"1.1\\",\\"httpVersionMajor\\":1,\\"httpVersionMinor\\":1}",
+  "headers": Object {
+    "content-type": "application/json; charset=utf-8",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/babel-promise-export.js 1`] = `
+Object {
+  "body": "test",
+  "headers": Object {},
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/buffer-should-throw-400-on-invalid-encoding.js 1`] = `
+Object {
+  "body": "Invalid body",
+  "headers": Object {},
+  "statusCode": 400,
+}
+`;
+
+exports[`micro/buffer-works.js 1`] = `
+Object {
+  "body": "❤️",
+  "headers": Object {
+    "content-length": 6,
+    "content-type": "application/octet-stream",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/content-type-header-for-json-is-set.js 1`] = `
+Object {
+  "body": "{}",
+  "headers": Object {
+    "content-type": "application/json; charset=utf-8",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/content-type-header-is-preserved-on-buffer.js 1`] = `
+Object {
+  "body": "hello",
+  "headers": Object {
+    "content-length": 5,
+    "content-type": "text/html",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/content-type-header-is-preserved-on-object.js 1`] = `
+Object {
+  "body": "{}",
+  "headers": Object {
+    "content-type": "text/html",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/content-type-header-is-preserved-on-stream.js 1`] = `
+Object {
+  "body": "River",
+  "headers": Object {
+    "content-type": "text/html",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/content-type-header-is-preserved-on-string.js 1`] = `
+Object {
+  "body": "<blink>woot</blink>",
+  "headers": Object {
+    "content-type": "text/html",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/custom-async-error.js 1`] = `
+Object {
+  "body": "My custom error!",
+  "headers": Object {
+    "content-length": 16,
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/custom-error.js 1`] = `
+Object {
+  "body": "My custom error!",
+  "headers": Object {
+    "content-length": 16,
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/json.js 1`] = `
+Object {
+  "body": "{\\"response\\":\\"json\\"}",
+  "headers": Object {
+    "content-length": 19,
+    "content-type": "application/json; charset=utf-8",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/json-circular.js 1`] = `
+Object {
+  "body": "Internal Server Error",
+  "headers": Object {},
+  "statusCode": 500,
+}
+`;
+
+exports[`micro/json-from-rawbodymap-works.js 1`] = `
+Object {
+  "body": "{\\"response\\":\\"json\\"}",
+  "headers": Object {
+    "content-length": 19,
+    "content-type": "application/json; charset=utf-8",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/json-limit-below.js 1`] = `
+Object {
+  "body": "{\\"response\\":\\"json\\"}",
+  "headers": Object {
+    "content-length": 19,
+    "content-type": "application/json; charset=utf-8",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/json-limit-over.js 1`] = `
+Object {
+  "body": "Body exceeded 3 limit",
+  "headers": Object {},
+  "statusCode": 413,
+}
+`;
+
+exports[`micro/json-parse-error.js 1`] = `
+Object {
+  "body": "Invalid JSON",
+  "headers": Object {},
+  "statusCode": 400,
+}
+`;
+
+exports[`micro/json-should-throw-400-on-empty-body-with-no-headers.js 1`] = `
+Object {
+  "body": "Invalid JSON",
+  "headers": Object {},
+  "statusCode": 400,
+}
+`;
+
+exports[`micro/limit-included-in-error.js 1`] = `
+Object {
+  "body": "Body exceeded 3 limit",
+  "headers": Object {},
+  "statusCode": 413,
+}
+`;
+
+exports[`micro/method.js 1`] = `
+Object {
+  "body": "GET",
+  "headers": Object {},
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/native-promise-export.js 1`] = `
+Object {
+  "body": "test",
+  "headers": Object {},
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/no-async.js 1`] = `
+Object {
+  "body": "{\\"a\\":\\"b\\"}",
+  "headers": Object {
+    "content-length": 9,
+    "content-type": "application/json; charset=utf-8",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/res-end-is-working.js 1`] = `
+Object {
+  "body": "woot",
+  "headers": Object {},
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/res-write.js 1`] = `
+Object {
+  "body": "helloworld",
+  "headers": Object {},
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/return-buffer.js 1`] = `
+Object {
+  "body": "Hammer",
+  "headers": Object {
+    "content-length": 6,
+    "content-type": "application/octet-stream",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/return-empty-string.js 1`] = `
+Object {
+  "body": "",
+  "headers": Object {},
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/return-null.js 1`] = `
+Object {
+  "body": "",
+  "headers": Object {},
+  "statusCode": 204,
+}
+`;
+
+exports[`micro/return-number.js 1`] = `
+Object {
+  "body": "4",
+  "headers": Object {
+    "content-type": "application/json; charset=utf-8",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/return-object.js 1`] = `
+Object {
+  "body": "{\\"a\\":\\"b\\"}",
+  "headers": Object {
+    "content-type": "application/json; charset=utf-8",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/return-promise.js 1`] = `
+Object {
+  "body": "I Promise",
+  "headers": Object {},
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/return-stream.js 1`] = `
+Object {
+  "body": "River",
+  "headers": Object {
+    "content-type": "application/octet-stream",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/return-string.js 1`] = `
+Object {
+  "body": "woot",
+  "headers": Object {},
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/send-200-buffer.js 1`] = `
+Object {
+  "body": "muscle",
+  "headers": Object {
+    "content-length": 6,
+    "content-type": "application/octet-stream",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/send-200-number.js 1`] = `
+Object {
+  "body": "4",
+  "headers": Object {
+    "content-length": 1,
+    "content-type": "application/json; charset=utf-8",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/send-200-object.js 1`] = `
+Object {
+  "body": "{\\"a\\":\\"b\\"}",
+  "headers": Object {
+    "content-length": 9,
+    "content-type": "application/json; charset=utf-8",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/send-200-stream.js 1`] = `
+Object {
+  "body": "waterfall",
+  "headers": Object {
+    "content-length": 9,
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/send-200-stream-with-error-on-same-tick.js 1`] = `
+Object {
+  "body": "Internal Server Error",
+  "headers": Object {
+    "content-type": "application/octet-stream",
+  },
+  "statusCode": 500,
+}
+`;
+
+exports[`micro/send-200-string.js 1`] = `
+Object {
+  "body": "woot",
+  "headers": Object {
+    "content-length": 4,
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/send-number.js 1`] = `
+Object {
+  "body": "",
+  "headers": Object {},
+  "statusCode": 404,
+}
+`;
+
+exports[`micro/statuscode-defaults-to-200.js 1`] = `
+Object {
+  "body": "woot",
+  "headers": Object {},
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/statuscode-on-response-works.js 1`] = `
+Object {
+  "body": "woot",
+  "headers": Object {},
+  "statusCode": 400,
+}
+`;
+
+exports[`micro/support-for-non-error-errors.js 1`] = `
+Object {
+  "body": "Internal Server Error",
+  "headers": Object {
+    "content-length": 21,
+  },
+  "statusCode": 500,
+}
+`;
+
+exports[`micro/support-for-status-fallback-in-errors.js 1`] = `
+Object {
+  "body": "Custom",
+  "headers": Object {
+    "content-length": 6,
+  },
+  "statusCode": 403,
+}
+`;
+
+exports[`micro/sync-return-string.js 1`] = `
+Object {
+  "body": "argon",
+  "headers": Object {},
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/throw-500.js 1`] = `
+Object {
+  "body": "Internal Server Error",
+  "headers": Object {},
+  "statusCode": 500,
+}
+`;
+
+exports[`micro/throw-500-sync.js 1`] = `
+Object {
+  "body": "Internal Server Error",
+  "headers": Object {},
+  "statusCode": 500,
+}
+`;
+
+exports[`micro/throw-with-code.js 1`] = `
+Object {
+  "body": "Error from test (expected)",
+  "headers": Object {},
+  "statusCode": 402,
+}
+`;
