@@ -3,6 +3,11 @@
     "version": "1.0.1",
     "main": "index.js",
     "license": "MIT",
+    "scripts": {
+        "lint": "eslint .",
+        "test": "jest",
+        "ci": "yarn run lint && yarn run test"
+    },
     "repository": {
         "type": "git",
         "url": "https://github.com/nathancahill/aws-serverless-micro.git"

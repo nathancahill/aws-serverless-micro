@@ -30,7 +30,7 @@ IncomingMessage.prototype.setTimeout = function(msecs, callback) {
     }
 }
 
-IncomingMessage.prototype._addHeaderLines = function(headers, n) {
+IncomingMessage.prototype._addHeaderLines = function(headers) {
     if (headers && headers.length) {
         var raw, dest
         if (this.complete) {
