@@ -21,27 +21,29 @@ const mapApiGatewayEventToHttpRequest = event => {
     const path = getPathWithQueryStringParams(event)
 
     let req = new IncomingMessage()
-    let headers = []
-
-    Object.keys(event.headers).forEach(k => {
-        headers.push(k)
-        headers.push(event.headers[k])
-    })
-
-    req._addHeaderLines(headers)
+    const eventHeaders = { ...event.headers }
 
     if (event.body) {
         const buffer = getEventBody(event)
         req.push(buffer)
         req.push(null)
 
-        if (!headers['Content-Length']) {
-            headers['Content-Length'] = Buffer.byteLength(buffer)
+        if (!eventHeaders['Content-Length']) {
+            eventHeaders['Content-Length'] = Buffer.byteLength(buffer)
         }
     } else {
         req.push('')
         req.push(null)
     }
+
+    let headers = []
+
+    Object.keys(eventHeaders).forEach(k => {
+        headers.push(k)
+        headers.push(event.headers[k])
+    })
+
+    req._addHeaderLines(headers)
 
     if (event.requestContext && event.requestContext.protocol) {
         // eslint-disable-next-line no-unused-vars
@@ -119,11 +121,12 @@ module.exports = mod => async event => {
         if (headerString.includes('chunked')) {
             for (var i = 0; i < bodyBuffers.length; i = i + 4) {
                 body =
-                    body +
-                    bodyBuffers[i].toString(
-                        mockRes.outputEncodings[i] || 'utf8',
-                    )
+                    body + bodyBuffers[i].toString(mockRes.outputEncodings[i])
             }
+        } else {
+            // eslint-disable-next-line no-unused-vars
+            const [headers, ...bodyStrings] = headerString.split('\r\n\r\n')
+            body = body + bodyStrings.join('\r\n\r\n')
         }
     }
 

@@ -20,6 +20,48 @@ Object {
 }
 `;
 
+exports[`aws-serverless-micro/res-write-only.js 1`] = `
+Object {
+  "body": "hello",
+  "headers": Object {
+    "content-length": "5",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`aws-serverless-micro/res-write-only-newlines.js 1`] = `
+Object {
+  "body": "hello
+
+world",
+  "headers": Object {
+    "content-length": "14",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`aws-serverless-micro/with-content-length.js 1`] = `
+Object {
+  "body": "{}",
+  "headers": Object {
+    "content-type": "application/json; charset=utf-8",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`aws-serverless-micro/without-request-context.js 1`] = `
+Object {
+  "body": "{\\"version\\":null}",
+  "headers": Object {
+    "content-type": "application/json; charset=utf-8",
+  },
+  "statusCode": 200,
+}
+`;
+
 exports[`micro/babel-promise-export.js 1`] = `
 Object {
   "body": "test",
@@ -382,6 +424,45 @@ exports[`micro/statuscode-defaults-to-200.js 1`] = `
 Object {
   "body": "woot",
   "headers": Object {},
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/statuscode-defaults-to-200-buffer.js 1`] = `
+Object {
+  "body": "woot",
+  "headers": Object {
+    "content-length": 4,
+    "content-type": "application/octet-stream",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/statuscode-defaults-to-200-json.js 1`] = `
+Object {
+  "body": "{\\"a\\":\\"woot\\"}",
+  "headers": Object {
+    "content-type": "application/json; charset=utf-8",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/statuscode-defaults-to-200-send.js 1`] = `
+Object {
+  "body": "done",
+  "headers": Object {},
+  "statusCode": 200,
+}
+`;
+
+exports[`micro/statuscode-defaults-to-200-stream.js 1`] = `
+Object {
+  "body": "River",
+  "headers": Object {
+    "content-type": "application/octet-stream",
+  },
   "statusCode": 200,
 }
 `;

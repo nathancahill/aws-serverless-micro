@@ -27,5 +27,12 @@
     "files": [
         "index.js",
         "IncomingMessage.js"
-    ]
+    ],
+    "jest": {
+        "collectCoverage": true,
+        "collectCoverageFrom": [
+            "index.js",
+            "IncomingMessage.js"
+        ]
+    }
 }
