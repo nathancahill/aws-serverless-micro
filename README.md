@@ -1,8 +1,8 @@
-# AWS Serverless Micro
-
 [![CircleCI](https://img.shields.io/circleci/project/github/nathancahill/aws-serverless-micro/master.svg)](https://circleci.com/gh/nathancahill/aws-serverless-micro)
 ![Codecov](https://img.shields.io/codecov/c/github/nathancahill/aws-serverless-micro.svg)
 ![Dependencies](https://img.shields.io/badge/dependencies-1-brightgreen.svg)
+
+# AWS Serverless Micro
 
 Run [Micro](https://github.com/zeit/micro/) functions on AWS Lambda. A very thin
 layer for Micro functions that does two things:
@@ -40,7 +40,17 @@ module.exports = {
 // Deploy `lambda.handler` with the tool of your choice
 ```
 
-### Compatability
+## Install
+
+```
+$ yarn add aws-serverless-micro
+```
+
+```
+$ npm install aws-serverless-micro
+```
+
+## Compatability
 
 This libary is **100% compatible** with the Micro API. The [full Micro test suite](https://github.com/nathancahill/aws-serverless-micro/tree/master/test/fixtures/micro)
 is run against the library with 100% coverage.
@@ -52,6 +62,6 @@ is run against the library with 100% coverage.
 -   [x] micro.text
 -   [x] micro.json
 
-### License
+## License
 
 MIT
