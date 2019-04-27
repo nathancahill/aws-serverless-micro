@@ -38,7 +38,7 @@ module.exports = {
 
 ### Compatability
 
-This libary is **100% compatible** with the Micro API. The full Micro test suite
+This libary is **100% compatible** with the Micro API. The [full Micro test suite](https://github.com/nathancahill/aws-serverless-micro/tree/master/test/fixtures/micro)
 is run against the library.
 
 -   [x] micro.send
