@@ -1,5 +1,7 @@
 ## AWS Serverless Micro
 
+[![CircleCI branch](https://img.shields.io/circleci/project/github/nathancahill/aws-serverless-micro/master.svg)](https://circleci.com/gh/nathancahill/aws-serverless-micro)
+
 Run [Micro](https://github.com/zeit/micro/) functions on AWS Lambda. A very thin
 layer for Micro functions that does two things:
 
