@@ -50,6 +50,8 @@ $ yarn add aws-serverless-micro
 $ npm install aws-serverless-micro
 ```
 
+aws-serverless-micro targets Node.js v8.10 or higher as this is the version running on AWS Lambda.
+
 ## Compatability
 
 This libary is **100% compatible** with the Micro API. The [full Micro test suite](https://github.com/nathancahill/aws-serverless-micro/tree/master/test/fixtures/micro)
