@@ -12,7 +12,7 @@ Object {
 
 exports[`aws-serverless-micro/request-object.js 1`] = `
 Object {
-  "body": "{\\"headers\\":{\\"content-type\\":\\"application/json\\"},\\"path\\":\\"/object?multi=a&multi=b&some=cool\\",\\"method\\":\\"POST\\",\\"httpVersion\\":\\"1.1\\",\\"httpVersionMajor\\":1,\\"httpVersionMinor\\":1}",
+  "body": "{\\"headers\\":{\\"content-type\\":\\"application/json\\"},\\"url\\":\\"/object?multi=a&multi=b&some=cool\\",\\"method\\":\\"POST\\",\\"httpVersion\\":\\"1.1\\",\\"httpVersionMajor\\":1,\\"httpVersionMinor\\":1}",
   "headers": Object {
     "content-type": "application/json; charset=utf-8",
   },

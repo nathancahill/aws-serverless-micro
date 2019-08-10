@@ -54,7 +54,7 @@ const mapApiGatewayEventToHttpRequest = event => {
         req.httpVersionMinor = Number(minor)
     }
 
-    req.path = path
+    req.url = path
     req.method = event.httpMethod
     return req
 }

@@ -1,7 +1,7 @@
 module.exports = async req => {
     return {
         headers: req.headers,
-        path: req.path,
+        url: req.url,
         method: req.method,
         httpVersion: req.httpVersion,
         httpVersionMajor: req.httpVersionMajor,
