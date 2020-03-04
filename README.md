@@ -1,5 +1,5 @@
-[![CircleCI](https://img.shields.io/circleci/project/github/nathancahill/aws-serverless-micro/master.svg)](https://circleci.com/gh/nathancahill/aws-serverless-micro)
-![Codecov](https://img.shields.io/codecov/c/github/nathancahill/aws-serverless-micro.svg)
+![CI](https://github.com/nathancahill/aws-serverless-micro/workflows/CI/badge.svg?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/nathancahill/aws-serverless-micro/badge.svg?branch=master)](https://coveralls.io/github/nathancahill/aws-serverless-micro?branch=master)
 ![Dependencies](https://img.shields.io/badge/dependencies-1-brightgreen.svg)
 
 # AWS Serverless Micro
