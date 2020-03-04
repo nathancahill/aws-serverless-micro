@@ -114,14 +114,33 @@ module.exports = mod => async event => {
     }
 
     let body = ''
-    if (mockRes.output.length) {
+
+    if (mockRes.output && mockRes.output.length) {
+        // < Node 11
         // eslint-disable-next-line no-unused-vars
         const [headerString, _n, ...bodyBuffers] = mockRes.output
 
         if (headerString.includes('chunked')) {
-            for (var i = 0; i < bodyBuffers.length; i = i + 4) {
+            for (let i = 0; i < bodyBuffers.length; i = i + 4) {
                 body =
                     body + bodyBuffers[i].toString(mockRes.outputEncodings[i])
+            }
+        } else {
+            // eslint-disable-next-line no-unused-vars
+            const [headers, ...bodyStrings] = headerString.split('\r\n\r\n')
+            body = body + bodyStrings.join('\r\n\r\n')
+        }
+    } else if (mockRes.outputData && mockRes.outputData.length) {
+        // >= Node 11
+        const [{ data: headerString }, ...bodyBuffersData] = mockRes.outputData
+
+        if (headerString.includes('chunked')) {
+            for (let i = 1; i < bodyBuffersData.length; i = i + 4) {
+                body =
+                    body +
+                    bodyBuffersData[i].data.toString(
+                        bodyBuffersData[i].encoding || 'utf8',
+                    )
             }
         } else {
             // eslint-disable-next-line no-unused-vars
