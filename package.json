@@ -5,8 +5,10 @@
     "license": "MIT",
     "scripts": {
         "lint": "eslint .",
-        "test": "jest",
-        "ci": "yarn run lint && yarn run test"
+        "test": "jest && yarn run lint",
+        "prepublishOnly": "yarn run lint",
+        "preversion": "yarn run test",
+        "postversion": "git push && git push --tags"
     },
     "repository": {
         "type": "git",
