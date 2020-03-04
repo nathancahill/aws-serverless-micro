@@ -114,7 +114,7 @@ module.exports = mod => async event => {
     }
 
     let body = ''
-    if (mockRes.output.length) {
+    if (mockRes.output && mockRes.output.length) {
         // eslint-disable-next-line no-unused-vars
         const [headerString, _n, ...bodyBuffers] = mockRes.output
 
