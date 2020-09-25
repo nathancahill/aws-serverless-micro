@@ -15,7 +15,7 @@
         "url": "https://github.com/nathancahill/aws-serverless-micro.git"
     },
     "devDependencies": {
-        "eslint": "^5.16.0",
+        "eslint": "^7.9.0",
         "eslint-config-prettier": "^6.12.0",
         "jest": "^25.5.4",
         "micro": "^9.3.4",
