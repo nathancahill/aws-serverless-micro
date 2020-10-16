@@ -16,7 +16,7 @@
     },
     "devDependencies": {
         "eslint": "^5.16.0",
-        "eslint-config-prettier": "^6.12.0",
+        "eslint-config-prettier": "^6.13.0",
         "jest": "^25.5.4",
         "micro": "^9.3.4",
         "prettier": "^1.19.1",
