@@ -19,7 +19,7 @@
         "eslint-config-prettier": "^6.15.0",
         "jest": "^25.5.4",
         "micro": "^9.3.4",
-        "prettier": "^1.19.1",
+        "prettier": "^2.1.2",
         "resumer": "^0.0.0",
         "then-sleep": "^1.0.1"
     },
