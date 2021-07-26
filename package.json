@@ -24,7 +24,7 @@
         "then-sleep": "^1.0.1"
     },
     "dependencies": {
-        "is-stream": "^2.0.0"
+        "is-stream": "^2.0.1"
     },
     "files": [
         "index.js",
